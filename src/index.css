@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.red-last-drop {
+	/* background: linear-gradient(
+		180deg,
+		rgba(255, 0, 0, 0.1) 30%,
+		rgba(255, 0, 0, 0.4) 100%
+	); */
+	border: 2px dashed rgba(255, 0, 0, 0.6);
+}
+
+.red-last-drop-top {
+	background: rgba(255, 0, 0, 1);
+	box-shadow: 0px 0px 20px 3px rgba(255, 0, 0, 1);
+}
+
+.pink-last-drop {
+	/* background: linear-gradient(
+		180deg,
+		rgba(212, 0, 255, 0.1) 30%,
+		rgba(212, 0, 255, 0.4) 100%
+	); */
+	border: 2px dashed rgba(212, 0, 255, 0.4);
+}
+
+.pink-last-drop-top {
+	background: rgba(212, 0, 255, 1);
+	box-shadow: 0px 0px 20px 3px rgba(212, 0, 255, 1);
+}
+
+.online-dot {
+	animation: online-dot 2s infinite;
+}
+
+.chat-form {
+	box-shadow: 0px -4px 10px black;
+}
+
+@keyframes online-dot {
+	0% {
+		box-shadow: 0px 0px 10px #a6ff35;
+	}
+
+	50% {
+		box-shadow: 0px 0px 3px #a6ff35;
+	}
+
+	100% {
+		box-shadow: 0px 0px 10px #a6ff35;
+	}
+}
